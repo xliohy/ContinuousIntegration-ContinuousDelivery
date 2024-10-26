@@ -1,0 +1,2 @@
+/usr/bin/git config --global credential.helper '!aws codecommit credential-helper $@'
+/usr/bin/git config --global credential.UseHttpPath true

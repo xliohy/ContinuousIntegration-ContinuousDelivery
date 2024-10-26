@@ -1,0 +1,20 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/ec2-user
+hooks:
+  AfterInstall:
+    - location: wsi-server.sh
+      runas: root 
+      timeout: 300
+#version: 0.0
+#os: linux
+#files:
+#  - source: /
+#    destination: /home/ec2-user
+#hooks:
+#  AfterInstall:
+#    - location: wsi-test.sh
+#      runas: ec2-user
+#      timeout: 300
